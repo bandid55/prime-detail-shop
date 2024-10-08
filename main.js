@@ -1,3 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
-    // Add any event listeners or interactions here
+// JavaScript for menu toggle if needed
+document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+    document.querySelector('nav ul').classList.toggle('active');
 });

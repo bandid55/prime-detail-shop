@@ -47,7 +47,7 @@ nav ul li a {
 }
 
 .menu-icon {
-    display: flex; /* Hide by default */
+    display: none; /* Hide by default */
     font-size: 24px;
     cursor: pointer;
 }

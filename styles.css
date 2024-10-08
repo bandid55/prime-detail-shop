@@ -56,7 +56,11 @@ h1{
 }
 
 #services {
-    text-align: center;
+    font-family: 'Arial', sans-serif; /* Replace with any preferred font */
+    color: #007BFF; /* Make it the same color as your links */
+    font-size: 2em; /* Adjust the size to your liking */
+    text-align: center; /* Center the title */
+    margin-bottom: 20px; 
     padding-top: 75px;
 }
 

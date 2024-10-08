@@ -218,45 +218,74 @@ footer {
     padding: 20px;
 }
     </style>
-</head>
-<body>
-
+<!-- Header Section -->
 <header>
-    <h1>Welcome to Prime Detail Shop</h1>
-    <p>Your trusted mobile car detailing and laundry service in the Bay Area.</p>
+    <div class="logo">
+        <img src="https://imgur.com/8AB5tDR.png" alt="Prime Detail Shop Logo">
+    </div>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#booking">Book Appointment</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+    </nav>
 </header>
 
-<nav>
-    <a href="#services">Services</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#booking">Book Appointment</a>
-    <a href="#contact">Contact Us</a>
-</nav>
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <h1>Premium Mobile Car Detailing & Laundry Services in the Bay Area</h1>
+        <p>We bring professional car detailing and clothes cleaning right to your doorstep. Convenient, reliable, and affordable services, all in one place.</p>
+        <a href="https://primedetailshop.as.me/schedule.php" class="cta-btn">Book an Appointment</a>
+    </div>
+</section>
 
+<!-- Services Section -->
 <section id="services">
     <h2>Our Services</h2>
-    <p>We offer premium car detailing services, including exterior wash, interior detailing, ceramic coating, and more. Additionally, we provide professional clothes cleaning and ironing services.</p>
-    <p><strong>Car Detailing:</strong> Starting from $90 for compact/sedans. <br> <strong>Clothes Ironing:</strong> From $20 per load.</p>
+    <p>At Prime Detail Shop, we provide high-quality car detailing services including exterior wash, interior cleaning, ceramic coating, and professional clothes cleaning services. We're here to keep your vehicle and wardrobe looking pristine.</p>
+    <div class="service-items">
+        <div class="service-item">
+            <h3>Car Detailing</h3>
+            <p>Starting from $90 for compact cars.</p>
+        </div>
+        <div class="service-item">
+            <h3>Clothes Ironing</h3>
+            <p>From $20 per load. Get fresh and neat clothes without the hassle.</p>
+        </div>
+        <div class="service-item">
+            <h3>Premium Services</h3>
+            <p>Get the ultimate care with ceramic coating and deep interior cleaning.</p>
+        </div>
+    </div>
 </section>
 
+<!-- Gallery Section -->
 <section id="gallery" class="gallery">
     <h2>Gallery</h2>
-    <img src="https://imgur.com/Sdhi7ew" alt="Car Detailing 1">
-    <img src="https://imgur.com/bwKpg2r" alt="Car Detailing 2">
-    <img src="https://imgur.com/uc9PLjI" alt="Laundry Service 1">
-    <img src="https://imgur.com/KTG2d6H" alt="Car Detailing 3">
-    <img src="https://imgur.com/9tJGMyO" alt="Laundry Service 2">
+    <div class="gallery-items">
+        <img src="https://imgur.com/Sdhi7ew.png" alt="Car Detailing 1">
+        <img src="https://imgur.com/bwKpg2r.png" alt="Car Detailing 2">
+        <img src="https://imgur.com/uc9PLjI.png" alt="Laundry Service">
+        <img src="https://imgur.com/KTG2d6H.png" alt="Car Detailing 3">
+    </div>
 </section>
 
-<section id="booking" class="cta">
+<!-- Booking Section -->
+<section id="booking" class="cta-section">
     <h2>Book Your Appointment</h2>
-    <p>Ready to give your car a showroom finish? Book your mobile detailing or clothes cleaning service today!</p>
-    <a href="https://primedetailshop.as.me/schedule.php" style="color: white; font-size: 1.2em;">Schedule an Appointment</a>
+    <p>Ready to experience the best car detailing and laundry services in the Bay Area? Book your appointment today!</p>
+    <a href="https://primedetailshop.as.me/schedule.php" class="cta-btn">Book Now</a>
 </section>
 
+<!-- Contact Section -->
 <section id="contact">
     <h2>Contact Us</h2>
-    <p>Have questions? We're here to help. Reach out to us using the form below or give us a call.</p>
+    <p>Have questions? Reach out to us using the form below or give us a call.</p>
     <p><strong>Phone:</strong> (XXX) XXX-XXXX</p>
     <p><strong>Address:</strong> Bay Area, San Francisco, CA</p>
     <div class="contact-form">
@@ -272,9 +301,18 @@ footer {
     </div>
 </section>
 
+<!-- Footer -->
 <footer>
-    <p>&copy; 2024 Prime Detail Shop | Mobile Car Detailing & Laundry Services in the Bay Area</p>
+    <p>&copy; 2024 Prime Detail Shop | Premium Car Detailing and Laundry Services in the Bay Area</p>
 </footer>
+
+<script>
+    function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('active');
+    }
+</script>
+
 
 </body>
 </html>

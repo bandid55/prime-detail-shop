@@ -14,7 +14,9 @@ header {
 }
 
 header .logo img {
-    width: 100px;
+    width: 200px;
+    margin-right: auto;
+    
 }
 
 nav {

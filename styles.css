@@ -1,4 +1,4 @@
-/* Global Styles */
+Global Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -69,16 +69,37 @@ nav ul.nav-list {
     nav ul.nav-list {
         display: none; /* Hidden by default */
         flex-direction: column;
-        background-color: #333;
+        background-color: #333; /* Optional: styling for mobile dropdown */
         width: 100%;
         position: absolute;
-        top: 50px;
+        top: 50px; /* Adjust to sit below the header */
         left: 0;
     }
 
     /* When 'open' is toggled, show the menu */
     nav ul.nav-list.open {
+        display: flex; /* Show the mobile menu */
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .menu-icon {
+        display: block;
+        margin-right: 20px;
+    }
+
+    nav ul.nav-list {
+        display: none;
+        flex-direction: column;
+    }
+
+    nav ul.nav-list.open {
         display: flex;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        text-align: center;
     }
 }
 
@@ -158,17 +179,16 @@ footer {
     background-color: rgba(0, 0, 0, 1);
     display: block;
 }
-
 /* General Section Styling */
 .section {
     padding: 50px 20px;
     text-align: center;
-    background-color: #f9f9f9;
+    background-color: #f9f9f9; /* Light background color */
 }
 
 h2 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 3em;
+    font-family: 'Roboto', sans-serif; /* Use a modern, clean font like Roboto */
+    font-size: 3em; /* Make it larger */
     margin-bottom: 40px;
     color: #333;
     letter-spacing: 1px;
@@ -191,14 +211,14 @@ h2 {
 }
 
 .service-card:hover, .plan-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px); /* Elevate on hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
 }
 
 .service-card h3, .plan-card h3 {
     font-size: 1.0em;
     margin-bottom: 20px;
-    color: #007BFF;
+    color: #007BFF; /* Blue accent */
 }
 
 .service-card p, .plan-card p {
@@ -219,7 +239,7 @@ h2 {
 }
 
 .cta:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; /* Darken the button color on hover */
 }
 
 /* Responsive Design */

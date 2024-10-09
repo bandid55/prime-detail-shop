@@ -62,7 +62,7 @@ nav ul.nav-list {
 @media only screen and (max-width: 600px) {
     .menu-icon {
         display: block;
-        font-size: 24px;
+        font-size: 34px;
         cursor: pointer;
     }
 
@@ -108,7 +108,7 @@ nav ul.nav-list {
     padding: 60px 0;
     text-align: center;
     margin-bottom: 40px;
-    padding-bottom: 75px;
+    padding-bottom: 175px;
 }
 
 .hero-content {

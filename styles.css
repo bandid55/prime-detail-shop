@@ -216,7 +216,7 @@ h2 {
 }
 
 .service-card h3, .plan-card h3 {
-    font-size: 1.5em;
+    font-size: 1.0em;
     margin-bottom: 20px;
     color: #007BFF; /* Blue accent */
 }
@@ -245,11 +245,11 @@ h2 {
 /* Responsive Design */
 @media only screen and (max-width: 600px) {
     h2 {
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     .cta {
         padding: 10px 20px;
-        font-size: 1em;
+        font-size: 0.5em;
     }
 }

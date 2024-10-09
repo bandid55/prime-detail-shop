@@ -69,37 +69,16 @@ nav ul.nav-list {
     nav ul.nav-list {
         display: none; /* Hidden by default */
         flex-direction: column;
-        background-color: #333; /* Optional: styling for mobile dropdown */
+        background-color: #333;
         width: 100%;
         position: absolute;
-        top: 50px; /* Adjust to sit below the header */
+        top: 50px;
         left: 0;
     }
 
     /* When 'open' is toggled, show the menu */
     nav ul.nav-list.open {
-        display: flex; /* Show the mobile menu */
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .menu-icon {
-        display: block;
-        margin-right: 20px;
-    }
-
-    nav ul.nav-list {
-        display: none;
-        flex-direction: column;
-    }
-
-    nav ul.nav-list.open {
         display: flex;
-    }
-
-    nav ul li {
-        margin-left: 0;
-        text-align: center;
     }
 }
 
@@ -179,17 +158,20 @@ footer {
     background-color: rgba(0, 0, 0, 1);
     display: block;
 }
+
 /* General Section Styling */
 .section {
     padding: 50px 20px;
     text-align: center;
-    background-color: #f9f9f9; /* Light background color */
+    background-color: #f9f9f9;
 }
 
 h2 {
-    font-size: 2.5em;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3em;
     margin-bottom: 40px;
     color: #333;
+    letter-spacing: 1px;
 }
 
 /* Services and Plan Cards */
@@ -209,14 +191,14 @@ h2 {
 }
 
 .service-card:hover, .plan-card:hover {
-    transform: translateY(-10px); /* Elevate on hover */
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
 .service-card h3, .plan-card h3 {
     font-size: 1.0em;
     margin-bottom: 20px;
-    color: #007BFF; /* Blue accent */
+    color: #007BFF;
 }
 
 .service-card p, .plan-card p {
@@ -237,7 +219,7 @@ h2 {
 }
 
 .cta:hover {
-    background-color: #0056b3; /* Darken the button color on hover */
+    background-color: #0056b3;
 }
 
 /* Responsive Design */
